@@ -1,4 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Phudu:wght@300..900&display=swap");
 @import "tailwindcss";
+
+@theme {
+  --font-phudu: "Phudu", serif;
+  --color-primary: #f45543;
+}
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -7,7 +13,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #000000;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -19,4 +25,16 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+}
+
+#texture {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  width: 100vw;
+  min-height: 100vh;
+  opacity: 0.2;
+  pointer-events: none;
+  transform: translateY(0);
+  filter: contrast(60%) brightness(100%);
 }
