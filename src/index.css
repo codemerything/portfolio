@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Phudu:wght@300..900&display=swap");
+@import url("https://api.fontshare.com/v2/css?f[]=satoshi@500,700&display=swap");
 @import "tailwindcss";
 
 @theme {
+  --font-satoshi: "Satoshi", sans-serif;
   --font-phudu: "Phudu", serif;
   --color-primary: #f45543;
 }
