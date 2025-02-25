@@ -2,7 +2,7 @@ export default function Home() {
   return (
     <>
       <nav>
-        <ul className="font-phudu flex justify-evenly pt-2 text-center text-sm underline">
+        <ul className="font-phudu flex justify-evenly pt-2 text-center text-sm">
           <li>
             Software<br></br>Engineer
           </li>
@@ -19,18 +19,22 @@ export default function Home() {
       </nav>
 
       <section className="mt-10 flex justify-center">
+        <a href="/zima" className="top-5">
+          zima
+        </a>
         <img src="/layer.png" alt="main photo" className="w-xs" />
+        <a href="/emery">emery</a>
       </section>
 
       <section className="relative">
-        <p className="absolute top-1 left-1/2 -translate-x-1/2 transform text-center">
+        <p className="font-satoshi absolute top-3 left-1/2 -translate-x-1/2 transform text-center text-xs uppercase">
           an edem production
         </p>
-        <p className="font-satoshi absolute top-2 left-1/2 -translate-x-1/2 transform text-center text-7xl font-bold">
+        <p className="font-satoshi absolute top-8 left-1/2 -translate-x-1/2 transform text-center text-7xl font-bold uppercase">
           emerything
         </p>
-        <p className="absolute top-24 left-1/2 -translate-x-1/2 transform text-center">
-          an absolute display of creativity and innovation
+        <p className="font-satoshi absolute top-28 left-1/2 -translate-x-1/2 transform text-center tracking-wide uppercase">
+          into the mind of a generalist
         </p>
       </section>
 
