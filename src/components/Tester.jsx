@@ -1,45 +1,23 @@
 export default function Home() {
   return (
-    <section className="text-lightGray mx-10 mt-5 flex space-x-3.5">
-      <div className="flex w-[50%] flex-col space-y-5">
-        <AboutMe />
-        <div className="bg-darkMode h-fit rounded-2xl p-5">
-          <p className="text-lightWhite text-md mb-3">Projects</p>
-          <Projects
-            year="2023"
-            projectName="Overwatch"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, consequuntur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, consequuntur."
-          />
-          <Projects
-            year="2024"
-            projectName="Stunnerrave"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, consequuntur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, consequuntur."
-          />
-        </div>
+    <section className="text-lightGray mx-10 mt-5 grid grid-cols-1 space-x-3.5 sm:grid-flow-row-dense sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      <div className="row-span-2 px-1 pb-2 sm:col-span-2 lg:aspect-square">
+        <p className="text-2xl sm:text-3xl lg:text-4xl">
+          Hey there, I’m Emery 👋 Welcome to my digital garden 🌱 I like
+          building things, and I’m currently helping to build Mobbin.
+        </p>
+        <p>
+          In my free time, I enjoy brewing coffee, tending to my plants, and
+          climbing (plastic) rocks.
+        </p>{" "}
+        <p>
+          I do some reading and writing as well, albeit not as consistently, but
+          I’m working on being better at that.
+        </p>
       </div>
+
       <div className="flex w-[50%] flex-col">
-        <div className="bg-darkMode h-fit rounded-2xl p-5">
-          <p className="text-lightWhite text-md mb-3">Experience</p>
-          <Experience
-            year="Present"
-            role="Frontend Engineer"
-            company="Overwatch"
-            location="Abuja, Nigeria"
-            highlight="inline-flex rounded-2xl bg-green-500 px-3 text-[12px] text-black"
-          />
-          <Experience
-            year="2024"
-            role="Technical Head"
-            company="Uncos Naija"
-            location="Abuja, Nigeria"
-          />
-          <Experience
-            year="2023"
-            role="IT Intern"
-            company="NDDC "
-            location="Cross River, Nigeria"
-          />
-        </div>
+        <div className="h-9 w-full bg-amber-200"></div>
       </div>
     </section>
   )
